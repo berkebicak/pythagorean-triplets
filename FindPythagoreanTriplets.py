@@ -8,7 +8,7 @@ class pythoTrip:
         self.n = 0
         self.i = 0
 
-    def pythagorean_triplet(self, n, p ):
+    def pythagorean_triplet(self, n):
         for b in range(n):
             for a in range(1, b):
                 c = math.sqrt(a * a + b * b)
