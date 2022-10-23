@@ -15,22 +15,8 @@ class pythoTrip:
                 if c % 1 == 0:
                     print(a, b, int(c))
 
+pythotrip = pytho_trip()
+pythotrip.pythagorean_triplet(100)
 
-if __name__ == "__main__":
-    for pythagoreanTriplets in range(1, os.cpu_count()):
-        n = int(5000/pythagoreanTriplets)
-        triplets = []
-        processes = []
-        shared_i = Array('i', [0]*pythagoreanTriplets)
-        shared_n = Array('i', [0]*pythagoreanTriplets)
-        for i in range(pythagoreanTriplets):
-            triplets.append(pythoTrip())
-            processes.append(Process(target=triplets[i].pythagorean_triplet, args=(n, i, shared_i, shared_n)))
-
-        for process in processes:
-            process.start()
-
-        for process in processes:
-            process.join()
 
 
