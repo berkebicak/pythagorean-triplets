@@ -1,2 +1,2 @@
 # pythagorean-triplets
-### Finding Pythagorean Triplets with Python
+### Finding Pythagorean Triples with Python
